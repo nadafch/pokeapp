@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8fc;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  opacity: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .content {
+  width: 100%;
+  max-width: 70%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.container .content .search-container {
+  width: 80%;
+  margin-top: 50px;
+  position: relative;
+}
+.container .content .search-container input {
+  width: 100%;
+  padding: 15px 5px 15px 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 0.5px 4px rgba(46, 46, 46, 0.192);
+}
+.container .content .search-container button {
+  background-color: #ff5350;
+  margin-top: 3px;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-shadow: 2px 2px 6px rgba(255, 83, 80, 0.8);
+  cursor: pointer;
+}
+.container .content .card-wrapper {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container .content .card-wrapper .card {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.192);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.container .content .card-wrapper .card img {
+  width: 100px;
+}
+.container .content .card-wrapper .card .card-title {
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.container .content .card-wrapper .card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.container .detail-wrapper {
+  width: 30%;
+  min-height: 95vh;
+  margin-right: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 3px 3px rgba(0, 0, 0, 0.242);
+}
+.container .detail-wrapper img {
+  width: 150px;
+}
+.container .detail-wrapper .detail-content {
+  margin-top: 10px;
+  text-align: center;
+}
+.container .detail-wrapper .detail-content strong {
+  text-transform: uppercase;
+}
+.container .detail-wrapper .detail-content p {
+  font-weight: 500;
+}
+.container .detail-wrapper .detail-content .types-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.container .detail-wrapper .detail-content .type {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #aca9cd;
+  font-weight: 600;
+}
+.container .detail-wrapper .detail-content .abilities-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .detail-wrapper .detail-content .ability {
+  padding: 8px;
+  background-color: #f6f8fc;
+  border-radius: 20px;
+  border: solid #aca9cd 2px;
+  font-size: 13px;
+}
+.container .detail-wrapper .detail-content .hidden {
+  border: solid #8a4444 2px;
+}
+.container .detail-wrapper .detail-content .stats-wrapper {
+  padding: 10px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.container .detail-wrapper .detail-content .badge {
+  padding: 3px;
+  background-color: #f6f8fc;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.301);
+}
+.container .detail-wrapper .detail-content .badge-type {
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 600;
+  color: white;
+}
+.container .detail-wrapper .detail-content .hp {
+  background-color: #df2140;
+}
+.container .detail-wrapper .detail-content .attack {
+  background-color: #ff803a;
+}
+.container .detail-wrapper .detail-content .defense {
+  background-color: #ffdc49;
+}
+.container .detail-wrapper .detail-content .special-attack {
+  background-color: #85ddff;
+}
+.container .detail-wrapper .detail-content .special-defense {
+  background-color: #a8ef8a;
+}
+.container .detail-wrapper .detail-content .speed {
+  background-color: #7496db;
+}/*# sourceMappingURL=style.css.map */
